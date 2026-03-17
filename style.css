@@ -54,8 +54,17 @@ nav {
     cursor: pointer;
     color: lightgray;
     font-weight: 400;
-    border-bottom: 2px solid lightgray;
-    border-width: 0;
+}
+
+.animated-line {
+  border-bottom: 2px solid lightgray;
+  width: 0%;
+  transition: width 3.0s ease-out;
+  cursor: pointers;
+}
+
+.animated-line:hover {
+  width: 100%;
 }
 
 
@@ -67,7 +76,7 @@ nav {
 
 .sliderWrapper {
     display: flex;
-    width: 500vw;
+    width: 600vw;
     transition: all 1.5s ease-in-out;
 }
 
@@ -148,6 +157,9 @@ nav {
   .sliderItem:nth-child(5) .sliderBg {
     background-color: rgb(124, 115, 80);
   }
+  .sliderItem:nth-child(6) .sliderBg {
+    background-color: rgb(63, 212, 223);
+  }
   
   .sliderItem:nth-child(1) .sliderPrice {
     color: #369e62;
@@ -163,6 +175,9 @@ nav {
   }
   .sliderItem:nth-child(5) .sliderPrice {
     color: cornsilk;
+  }
+  .sliderItem:nth-child(6) .sliderPrice {
+    color: rgb(63, 212, 223);
   }
   
   .features {

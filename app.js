@@ -77,6 +77,21 @@ const products = [
       },
     ],
   },
+  {
+    id: 6,
+    title: "Curry Series 7",
+    price: 249,
+    colors: [
+      {
+        code: "mediumspringgreen",
+        img: "./img/Product/curry.png",
+      },
+      {
+        code: "mediumspringgreen",
+        img: "./img/Product/curry.png",
+      },
+    ],
+  },
 ];
 
 let choosenProduct = products[0];
